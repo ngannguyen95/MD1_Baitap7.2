@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let sum = 0;
+    let i=1;
+    let count = 0;
+    while (count < 30) {
+        if (i % 7 == 0) {
+            sum += i;
+            console.log('sum-->' + sum);
+            count++;
+            console.log('count--->' + count);
+        }
+        i++;
+    }
+    document.write('Tổng của 30 số chia hết cho 7 :' + sum + '<br>');
+    console.log(7*(30+1)*15)
+</script>
+</body>
+</html>

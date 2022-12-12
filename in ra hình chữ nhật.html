@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let m= +prompt('Chiều cao hình chữ nhật:');
+    let n= +prompt('Chiều dài hình chữ nhật');
+    for (let i = 1; i <=m ; i++) {
+        for (let j = 1; j <=n ; j++) {
+            document.write('*');
+            if (i==1||j==1||i==m||j==n){
+               document.write('*')
+            }else document.write('');
+        }
+    }
+</script>
+</body>
+</html>

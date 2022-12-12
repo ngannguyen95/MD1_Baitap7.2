@@ -9,13 +9,19 @@
     let f0 = 0;
     let f1 = 1;
     let fn;
-    for (let i = 1; i < 20; i++) {
-        fn= f0 + f1;
-        console.log(fn);
-        f0 = f1;
-        f1 = fn;
-    }
-    document.write(f0 + '<br>');
+    for (let i =0; i < 20; i++) {
+        if (i<2 ){
+            document.write(i+'<br>');
+        }else{
+            fn= f0 + f1;
+            console.log(f0)
+            f0 = f1;
+            f1=fn;
+            console.log('fn----->',fn)
+            document.write(fn + '<br>');
+        }
+        }
+
 </script>
 </body>
 </html>

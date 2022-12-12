@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Số đầu tiên trong dãy chia hết cho5</title>
+</head>
+<body>
+<script>
+    let f0 = 0;
+    let f1 = 1;
+    let fn,number;
+    for (let i = 0; i < number; i++) {
+        fn = f0 + f1;
+        console.log(f0)
+        f0 = f1;
+        f1 = fn;
+        console.log('fn----->', fn)
+    for (let j = 0; j < i; j++) {
+        if (fn % 5 == 0) {
+            document.write('Số chia hết đầu tiên chia hết cho5: ' + fn);
+            break;
+        }
+    }
+    }
+
+</script>
+</body>
+</html>
